@@ -1,0 +1,38 @@
+.navbar {
+  height: 10vh;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  background-color: var(--bg-primary);
+
+  .navbarMenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .navbarLoginIcon {
+      font-size: 2rem;
+    }
+
+    .menuLoginBlock {
+      display: flex;
+      flex-direction: column;
+
+      margin-left: 14px;
+
+      .menuTitle {
+      }
+
+      .menuSubtitle {
+        border: none;
+        padding: 2px 0;
+        cursor: pointer;
+
+        background: var(--bg-primary);
+        text-decoration: underline;
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+:root {
+  --bg-primary: #eee5e5;
+  --bg-secondary: #1f1b1b;
+
+  --text-primary: #303030;
+  --text-secondary: #faf8f8;
+
+  --btn-primary: #303030;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
+button {
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+/* aqui é para personalizar o fundo da barra, neste caso estou colocando um fundo cinza escuro*/
+::-webkit-scrollbar-track {
+  background: #333;
+}
+
+/* aqui é a alça da barra, que demonstra a altura que você está na página
+  estou colocando uma cor azul clara nela*/
+::-webkit-scrollbar-thumb {
+  background: #d1caca;
+}

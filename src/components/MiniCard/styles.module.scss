@@ -1,0 +1,37 @@
+.card {
+  margin: 24px 0;
+
+  img {
+    width: 210px;
+    height: 210px;
+
+    padding: 0 24px;
+
+    cursor: pointer;
+  }
+
+  .cardInformation {
+    display: flex;
+    flex-direction: column;
+
+    .priceWithDiscount {
+      font-size: 1.1rem;
+      font-weight: 600;
+
+      margin-top: 14px;
+    }
+
+    .price {
+      font-size: 0.9rem;
+    }
+
+    .title {
+      margin-top: 8px;
+    }
+
+    .site {
+      margin-top: 4px;
+      font-size: 0.7rem;
+    }
+  }
+}
