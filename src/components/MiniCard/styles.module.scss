@@ -35,3 +35,59 @@
     }
   }
 }
+
+@media screen and (max-width: 1080px) {
+  .card {
+    padding-left: 10px !important;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .card {
+    padding-left: 10px !important;
+
+    img {
+      width: 144px !important;
+      height: 144px !important;
+
+      padding: 0;
+    }
+
+    .cardInformation {
+      .priceWithDiscount {
+        font-size: 1rem;
+        font-weight: 600;
+
+        margin-top: 14px;
+      }
+
+      .price {
+        font-size: 0.8rem;
+      }
+
+      .title {
+        font-size: 0.8rem;
+      }
+
+      .site {
+        margin-top: 4px;
+        font-size: 0.7rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .card {
+    margin-right: 0px !important;
+
+    overflow: hidden;
+
+    img {
+      width: 144px !important;
+      height: 144px !important;
+
+      padding-right: 24px;
+    }
+  }
+}

@@ -17,10 +17,16 @@
 html,
 body {
   font-family: 'Montserrat Alternates', sans-serif;
+  scroll-behavior: smooth;
 }
 
 button {
   font-family: 'Montserrat Alternates', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-primary);
 }
 
 ::-webkit-scrollbar {

@@ -6,57 +6,41 @@ import Slider from 'react-slick';
 import styles from './styles.module.scss';
 
 import { MiniCard } from '../MiniCard';
+import { Fragment, FunctionComponent, useState } from 'react';
+import { Book } from '../../model/Book';
 
-const books = [
-  {
-    title: 'Test Driven Development',
-    imageURL:
-      'https://images-na.ssl-images-amazon.com/images/I/41pO5GqNtzL.jpg',
-    price: 296.44,
-  },
-  {
-    title: 'Python Programming',
-    imageURL:
-      'https://images-na.ssl-images-amazon.com/images/I/41z1V0zP2WL.jpg',
-    price: 101.08,
-  },
-  {
-    title: 'Domain Driven Design',
-    imageURL: 'https://m.media-amazon.com/images/I/51OWGtzQLLL.jpg',
-    price: 470.99,
-  },
-  {
-    title: 'Padrões de Projeto',
-    imageURL:
-      'https://images-na.ssl-images-amazon.com/images/I/51bO3rI8hEL._SX348_BO1,204,203,200_.jpg',
-    price: 402.96,
-  },
-  {
-    title: 'Test Driven Development',
-    imageURL:
-      'https://images-na.ssl-images-amazon.com/images/I/41pO5GqNtzL.jpg',
-    price: 296.44,
-  },
-  {
-    title: 'Test Driven Development',
-    imageURL:
-      'https://images-na.ssl-images-amazon.com/images/I/41pO5GqNtzL.jpg',
-    price: 296.44,
-  },
-];
+type PersonalCarouselProps = {
+  books: Book[];
+};
 
-const PersonalCarousel = () => {
+const PersonalCarousel: FunctionComponent<PersonalCarouselProps> = ({
+  books,
+}) => {
+  const [actualWidth, setActualWidth] = useState({});
+
+  const slides = actualWidth < 580 ? 2 : 4;
+
   const settings = {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 4,
+    slidesToShow: slides,
     slidesToScroll: 1,
   };
 
+  const updateScreenWidth = () => {
+    setActualWidth(window.innerWidth);
+  };
+
+  window.addEventListener('resize', updateScreenWidth);
+
   const renderBooks = () => {
     return books.map((book) => {
-      return <MiniCard book={book} />;
+      return (
+        <Fragment key={`carousel_item_${Math.random()}`}>
+          <MiniCard book={book} />
+        </Fragment>
+      );
     });
   };
 

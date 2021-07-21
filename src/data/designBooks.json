@@ -1,0 +1,32 @@
+[
+  {
+    "title": "A psicologia das cores: Como as cores afetam a emoção e a razão",
+    "imageURL": "https://images-na.ssl-images-amazon.com/images/I/41RuWuRzqsL._SX354_BO1,204,203,200_.jpg",
+    "price": 124.38
+  },
+  {
+    "title": "Pensar com tipos: Guia para designers, escritores, editores e estudantes",
+    "imageURL": "https://images-na.ssl-images-amazon.com/images/I/41-Mfe6MGPS._SX409_BO1,204,203,200_.jpg",
+    "price": 116.22
+  },
+  {
+    "title": "Design thinking",
+    "imageURL": "https://images-na.ssl-images-amazon.com/images/I/51-JRViHSkL._SX323_BO1,204,203,200_.jpg",
+    "price": 219.0
+  },
+  {
+    "title": "Neuro Design: Neuromarketing Insights to Boost Engagement and Profitability",
+    "imageURL": "https://images-na.ssl-images-amazon.com/images/I/41+2r7lQcdL._SX330_BO1,204,203,200_.jpg",
+    "price": 277.89
+  },
+  {
+    "title": "Branding + design: a estratégia na criação de identidades de marca",
+    "imageURL": "https://images-na.ssl-images-amazon.com/images/I/41AYrTf4StL._SX350_BO1,204,203,200_.jpg",
+    "price": 34.05
+  },
+  {
+    "title": "Test Driven Development",
+    "imageURL": "https://images-na.ssl-images-amazon.com/images/I/41IzzswLOFL._SX342_BO1,204,203,200_.jpg",
+    "price": 34.9
+  }
+]

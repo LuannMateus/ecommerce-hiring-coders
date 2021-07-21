@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Memórias póstumas de Brás Cubas",
+    "imageURL": "https://images-na.ssl-images-amazon.com/images/I/412DtI9fxrL._SX322_BO1,204,203,200_.jpg",
+    "price": 18.19
+  },
+  {
+    "title": "Design thinking",
+    "imageURL": "https://images-na.ssl-images-amazon.com/images/I/51-JRViHSkL._SX323_BO1,204,203,200_.jpg",
+    "price": 219.0
+  },
+  {
+    "title": "Domain Driven Design",
+    "imageURL": "https://m.media-amazon.com/images/I/51OWGtzQLLL.jpg",
+    "price": 470.99
+  },
+  {
+    "title": "Padrões de Projeto",
+    "imageURL": "https://images-na.ssl-images-amazon.com/images/I/51bO3rI8hEL._SX348_BO1,204,203,200_.jpg",
+    "price": 402.96
+  },
+  {
+    "title": "Test Driven Development",
+    "imageURL": "https://images-na.ssl-images-amazon.com/images/I/41pO5GqNtzL.jpg",
+    "price": 296.44
+  },
+  {
+    "title": "Vidas secas",
+    "imageURL": "https://images-na.ssl-images-amazon.com/images/I/41RHln7kZoL._SX321_BO1,204,203,200_.jpg",
+    "price": 185.0
+  }
+]

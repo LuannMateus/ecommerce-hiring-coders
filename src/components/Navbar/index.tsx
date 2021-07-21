@@ -1,7 +1,8 @@
-import { useEffect } from 'react';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+
 import { FaUserCircle } from 'react-icons/fa';
 import { useHistory } from 'react-router';
+import { Link } from 'react-router-dom';
 
 import styles from './styles.module.scss';
 
@@ -40,8 +41,10 @@ const Navbar = () => {
   };
 
   return (
-    <nav className={styles.navbar}>
-      <h1>Best Book</h1>
+    <nav id="navbar" className={styles.navbar}>
+      <Link to="/">
+        <h1>Best Book</h1>
+      </Link>
       <menu className={styles.navbarMenu}>
         <FaUserCircle className={styles.navbarLoginIcon} />
         <div className={styles.menuLoginBlock}>

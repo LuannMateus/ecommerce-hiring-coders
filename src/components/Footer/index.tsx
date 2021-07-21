@@ -7,7 +7,9 @@ import styles from './styles.module.scss';
 const Footer = () => {
   return (
     <footer className={styles.footer}>
-      <button className={styles.backButton}>Voltar ao inicio</button>
+      <a href="#navbar">
+        <button className={styles.backButton}>Voltar ao inicio</button>
+      </a>
 
       <section className={styles.footerSocialMedias}>
         <a href="/">

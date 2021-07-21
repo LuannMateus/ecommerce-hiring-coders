@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Dom Casmurro",
+    "imageURL": "https://images-na.ssl-images-amazon.com/images/I/41GeyYROqTL._SX346_BO1,204,203,200_.jpg",
+    "price": 33.67
+  },
+  {
+    "title": "Memórias póstumas de Brás Cubas",
+    "imageURL": "https://images-na.ssl-images-amazon.com/images/I/412DtI9fxrL._SX322_BO1,204,203,200_.jpg",
+    "price": 18.19
+  },
+  {
+    "title": "O Cortiço",
+    "imageURL": "https://images-na.ssl-images-amazon.com/images/I/518IaZYte8L._SX328_BO1,204,203,200_.jpg",
+    "price": 16.99
+  },
+  {
+    "title": "Iracema",
+    "imageURL": "https://images-na.ssl-images-amazon.com/images/I/51r7LT8V3HL._SX346_BO1,204,203,200_.jpg",
+    "price": 27.4
+  },
+  {
+    "title": "Memórias de Um Sargento de Milícias",
+    "imageURL": "https://images-na.ssl-images-amazon.com/images/I/51iODZqPHvL._SX341_BO1,204,203,200_.jpg",
+    "price": 49.0
+  },
+  {
+    "title": "Vidas secas",
+    "imageURL": "https://images-na.ssl-images-amazon.com/images/I/41RHln7kZoL._SX321_BO1,204,203,200_.jpg",
+    "price": 185.0
+  }
+]

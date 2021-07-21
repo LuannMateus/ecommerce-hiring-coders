@@ -148,3 +148,33 @@
     }
   }
 }
+
+@media screen and (max-width: 720px) {
+  .pageAuth {
+    flex-direction: column;
+
+    aside {
+      height: 20vh;
+      flex: 2;
+
+      padding: 120px 10px;
+
+      text-align: center;
+
+      strong {
+        font-size: 1.5rem;
+      }
+
+      p {
+        font-size: 1.1rem;
+      }
+    }
+
+    main {
+      flex: 20;
+      height: 80vh;
+
+      // margin: 24px 0;
+    }
+  }
+}
