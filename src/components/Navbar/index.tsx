@@ -17,11 +17,12 @@ const Navbar = () => {
   const history = useHistory();
 
   useEffect(() => {
-    const userData = localStorage.getItem('user') ?? '';
+    const userExists = !!localStorage.getItem('user');
 
-    const parseUser = JSON.parse(userData) as User;
+    if (userExists) {
+      const userData = localStorage.getItem('user') ?? '';
 
-    if (parseUser.name !== '') {
+      const parseUser = JSON.parse(userData) as User;
       setUser(parseUser);
     } else {
       setUser({
