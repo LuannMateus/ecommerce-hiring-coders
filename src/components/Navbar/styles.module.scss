@@ -34,10 +34,26 @@
         text-decoration: underline;
       }
     }
+
+    .menuAdminBlock {
+      display: flex;
+      align-items: center;
+
+      margin-left: 24px;
+
+      .adminIcon {
+        font-size: 2rem;
+      }
+
+      .menuTitle {
+        text-align: center;
+        margin-left: 8px;
+      }
+    }
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 380px) {
   .navbar {
     .navbarMenu {
       .menuLoginBlock {
@@ -49,6 +65,17 @@
 
         .menuSubtitle {
           font-size: 0.8rem;
+        }
+      }
+
+      .menuAdminBlock {
+        .adminIcon {
+          font-size: 2rem;
+          margin: 0 4px;
+        }
+
+        .menuTitle {
+          display: none;
         }
       }
     }

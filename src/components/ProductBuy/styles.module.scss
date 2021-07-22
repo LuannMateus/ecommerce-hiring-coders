@@ -1,0 +1,124 @@
+.box {
+  display: flex;
+  flex-direction: column;
+
+  width: 268px;
+  height: 100%;
+
+  padding: 20px;
+
+  border: 1px solid #abc;
+
+  margin-left: 44px;
+
+  .priceBox {
+    display: flex;
+    justify-content: space-between;
+
+    p {
+      font-size: 0.8rem;
+      font-weight: 600;
+    }
+
+    span {
+      font-size: 1.1rem;
+      font-weight: 500;
+    }
+  }
+
+  .priceWithoutDiscount {
+    align-self: flex-end;
+    font-size: 0.8rem;
+
+    margin-top: 8px;
+  }
+
+  .discountInfo {
+    font-size: 0.8rem;
+    font-weight: 500;
+
+    align-self: flex-end;
+
+    margin-top: 8px;
+  }
+
+  .shippingInfo {
+    font-size: 0.8rem;
+    font-weight: 600;
+
+    margin-top: 8px;
+  }
+
+  .promotionInfo {
+    font-size: 0.8rem;
+    font-weight: 500;
+
+    margin-top: 8px;
+
+    span {
+      font-size: 1rem;
+    }
+  }
+
+  .productQuantity {
+    font-size: 0.8rem;
+    font-weight: 500;
+
+    margin-top: 8px;
+  }
+
+  .buyButton {
+    border: none;
+    border-radius: 16px;
+
+    padding: 6px 6px;
+    background-color: var(--bg-primary);
+
+    margin-top: 8px;
+
+    cursor: pointer;
+
+    transition: filter 0.5s;
+
+    &:hover {
+      filter: brightness(0.95);
+    }
+  }
+
+  .safetyTransaction {
+    font-size: 0.8rem;
+
+    margin-top: 16px;
+  }
+
+  .sendByInfo {
+    font-size: 0.8rem;
+    font-weight: 400;
+
+    margin-top: 12px;
+
+    span {
+      font-weight: 600;
+    }
+  }
+
+  .saleByInfo {
+    font-size: 0.8rem;
+    font-weight: 400;
+
+    margin-top: 4px;
+
+    span {
+      font-weight: 600;
+    }
+  }
+}
+
+@media screen and (max-width: 1080px) {
+}
+
+@media screen and (max-width: 720px) {
+}
+
+@media screen and (max-width: 520px) {
+}

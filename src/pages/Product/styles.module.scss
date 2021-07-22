@@ -1,0 +1,151 @@
+.container {
+  padding: 0 120px;
+
+  .productHeader {
+    margin-top: 8px;
+    margin-left: 8px;
+
+    .backButton {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+
+      gap: 6px;
+      font-size: 0.8rem;
+    }
+  }
+
+  .mainProduct {
+    display: flex;
+
+    padding: 14px 18px 18px;
+    margin-top: 44px;
+
+    .productImage {
+      width: 244px;
+      height: 346px;
+    }
+
+    .productInfo {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+
+      padding-left: 44px;
+
+      .infoTitle {
+        font-size: 1.6;
+        font-weight: 500;
+      }
+
+      .infoSubtitle {
+        margin-top: 8px;
+        font-size: 0.8rem;
+
+        padding-bottom: 12px;
+        border-bottom: 1px solid #abc;
+      }
+
+      .infoDescription {
+        width: 100%;
+        font-size: 0.9rem;
+
+        margin-top: 8px;
+
+        padding-bottom: 12px;
+
+        border-bottom: 1px solid #abc;
+      }
+
+      .infoBook {
+        display: flex;
+        gap: 24px;
+      }
+    }
+  }
+
+  .anotherBooks {
+    margin-top: 64px;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .container {
+    padding: 0;
+
+    .mainProduct {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      padding: 0;
+
+      .productInfo {
+        padding: 0 12px;
+
+        align-items: center;
+        justify-content: center;
+
+        .infoTitle {
+          margin-top: 16px;
+        }
+
+        .infoDescription {
+          width: 100%;
+        }
+
+        .infoBook {
+          display: none;
+        }
+      }
+
+      .mainProductBuy {
+        margin-top: 24px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .container {
+    padding: 0;
+
+    .mainProduct {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      padding: 0;
+
+      .productInfo {
+        width: 100%;
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+
+        padding: 0 12px;
+
+        .infoTitle {
+          margin-top: 16px;
+        }
+
+        .infoDescription {
+          width: 100%;
+        }
+
+        .infoBook {
+          display: none;
+        }
+      }
+
+      .mainProductBuy {
+        margin-top: 24px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 520px) {
+}

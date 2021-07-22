@@ -17,12 +17,4 @@ const saveUserInLocalStorage = (key: string, data: User | Product) => {
   }
 };
 
-// const saveProductInLocalStorage = (key: string, data: Product) => {
-//   const actualData = JSON.stringify(localStorage.getItem(key));
-
-//   const newData = actualData.concat(JSON.stringify(data));
-
-//   localStorage.setItem(key, JSON.stringify(newData));
-// };
-
 export { saveUserInLocalStorage };

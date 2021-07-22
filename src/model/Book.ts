@@ -1,5 +1,11 @@
 export interface Book {
   title: string;
-  imageURL: string;
   price: number;
+  pageCount: number;
+  publishedDate: string;
+  thumbnailUrl: string;
+  longDescription: string;
+  authors: string[];
+  language: string;
+  publishingCompany: string;
 }

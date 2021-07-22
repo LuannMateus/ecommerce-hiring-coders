@@ -1,9 +1,6 @@
 import { Helmet } from 'react-helmet';
 
-import weekPromotionsBooks from '../../data/weekPromotions.json';
-import programmingBooks from '../../data/programmingBooks.json';
-import designBooks from '../../data/designBooks.json';
-import classicBrazilianBooks from '../../data/classicBrazilianBooks.json';
+import data from '../../data/data.json';
 
 import { PersonalCarousel } from '../../components/Carousel';
 import { Navbar } from '../../components/Navbar';
@@ -13,10 +10,7 @@ import styles from './styles.module.scss';
 import { Book } from '../../model/Book';
 
 const Home = () => {
-  const programmingCategory = programmingBooks as Book[];
-  const designCategory = designBooks as Book[];
-  const classicCategory = classicBrazilianBooks as Book[];
-  const weekPromotionsCategory = weekPromotionsBooks as Book[];
+  const books = data as Book[];
 
   return (
     <>
@@ -27,22 +21,22 @@ const Home = () => {
 
       <header className={styles.homeHeader}>
         <h2>Promoções da semana</h2>
-        <PersonalCarousel books={weekPromotionsCategory} />
+        <PersonalCarousel books={books} />
       </header>
       <main className={styles.homeMain}>
         <section className={styles.booksSection}>
           <h2>Livros de programação</h2>
-          <PersonalCarousel books={programmingCategory} />
+          <PersonalCarousel books={books} />
         </section>
 
         <section className={styles.booksSection}>
           <h2>Livros de design</h2>
-          <PersonalCarousel books={designCategory} />
+          <PersonalCarousel books={books} />
         </section>
 
         <section className={styles.booksSection}>
           <h2>Livros clássicos</h2>
-          <PersonalCarousel books={classicCategory} />
+          <PersonalCarousel books={books} />
         </section>
       </main>
       <Footer />

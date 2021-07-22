@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react';
 
+import { IoMdSettings } from 'react-icons/io';
 import { FaUserCircle } from 'react-icons/fa';
+
 import { useHistory } from 'react-router';
 import { Link } from 'react-router-dom';
 
@@ -59,6 +61,15 @@ const Navbar = () => {
             {user?.name === '' && 'Entre ou cadastre-se'}
             {user?.name !== '' && 'Sair'}
           </button>
+        </div>
+
+        <div className={styles.menuAdminBlock}>
+          <Link to="/admin" className={styles.menuAdminBlock}>
+            <IoMdSettings className={styles.adminIcon} />
+            <strong>
+              <p className={styles.menuTitle}>Administração</p>
+            </strong>
+          </Link>
         </div>
       </menu>
     </nav>
