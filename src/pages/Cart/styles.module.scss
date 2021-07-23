@@ -1,0 +1,20 @@
+.cartContainer {
+  height: 61vh;
+
+  .cartHeader {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 24px;
+  }
+
+  .cartMain {
+    display: flex;
+    flex-direction: column;
+
+    gap: 12px;
+
+    margin-top: 104px;
+    padding: 0 150px;
+  }
+}

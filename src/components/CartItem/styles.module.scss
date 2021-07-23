@@ -1,0 +1,79 @@
+.cartBox {
+  display: flex;
+  align-items: center;
+  // justify-content: space-between;
+
+  width: 100%;
+  height: 84px;
+
+  border-top: 1px solid #abc;
+  border-bottom: 1px solid #abc;
+
+  padding: 114px 0;
+
+  .cartImage {
+    width: 180px;
+    height: 180px;
+
+    padding: 0 14px;
+  }
+
+  .infoCartBox {
+    width: 100%;
+    height: 180px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    margin-left: 34px;
+
+    .titleBox {
+      width: 100%;
+
+      display: flex;
+      justify-content: space-between;
+
+      .infoTitle {
+        font-size: 1rem;
+        font-weight: 500;
+      }
+
+      span {
+        align-items: flex-end;
+        justify-self: flex-end;
+      }
+    }
+
+    .infoAuthor {
+      font-size: 0.8rem;
+      font-weight: 500;
+
+      margin-top: 8px;
+    }
+
+    .infoPublish {
+      font-size: 0.7rem;
+      font-weight: 600;
+      margin-top: 8px;
+    }
+
+    .cartItemButtonActions {
+      margin-top: 8px;
+
+      .removeButton {
+        border: none;
+        background: none;
+
+        margin-top: 8px;
+
+        cursor: pointer;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

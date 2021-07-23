@@ -14,6 +14,7 @@
 
     .navbarLoginIcon {
       font-size: 2rem;
+      color: var(--bg-secondary);
     }
 
     .menuLoginBlock {
@@ -21,9 +22,6 @@
       flex-direction: column;
 
       margin-left: 14px;
-
-      .menuTitle {
-      }
 
       .menuSubtitle {
         border: none;
@@ -35,19 +33,147 @@
       }
     }
 
-    .menuAdminBlock {
+    .menuActionsButtons {
       display: flex;
-      align-items: center;
 
-      margin-left: 24px;
+      .menuAdminBlock {
+        display: flex;
+        align-items: center;
 
-      .adminIcon {
-        font-size: 2rem;
+        margin-left: 24px;
+
+        .adminIcon {
+          font-size: 2rem;
+        }
+
+        .menuTitle {
+          text-align: center;
+          margin-left: 8px;
+        }
       }
 
-      .menuTitle {
-        text-align: center;
-        margin-left: 8px;
+      .menuCartBlock {
+        display: flex;
+        align-items: center;
+
+        margin-left: 24px;
+
+        span {
+          border-radius: 50%;
+          border: 1px solid #abc;
+
+          padding: 1px 8px;
+
+          font-size: 0.8rem;
+
+          align-self: flex-end;
+          background-color: rgba(128, 0, 128, 0.568);
+          color: #fff;
+        }
+
+        .cartIcon {
+          font-size: 2rem;
+        }
+
+        strong {
+          display: flex;
+          align-self: center;
+
+          .menuTitle {
+            display: flex;
+
+            margin-left: 8px;
+
+            align-self: flex-end;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .navbar {
+    flex-direction: column;
+    height: 30vh;
+
+    .navbarMenu {
+      flex-direction: column;
+
+      text-align: center;
+
+      .menuLoginBlock {
+        margin-top: 12px;
+
+        strong .menuTitle {
+          font-size: 1.2rem;
+        }
+
+        .menuSubtitle {
+          font-size: 0.8rem;
+        }
+      }
+
+      .menuActionsButtons {
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        margin-top: 24px;
+
+        .menuAdminBlock {
+          margin: 0;
+          .menuTitle {
+            display: none;
+          }
+        }
+
+        .menuCartBlock {
+          strong .menuTitle {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .navbar {
+    flex-direction: column;
+    height: 30vh;
+
+    .navbarMenu {
+      flex-direction: column;
+
+      text-align: center;
+
+      .menuAdminBlock {
+        .menuTitle {
+          display: none;
+        }
+      }
+
+      .menuActionsButtons {
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        margin-top: 24px;
+
+        .menuAdminBlock {
+          margin: 0;
+        }
+
+        .menuCartBlock {
+          strong .menuTitle {
+            display: none;
+          }
+        }
       }
     }
   }
@@ -55,7 +181,14 @@
 
 @media screen and (max-width: 380px) {
   .navbar {
+    flex-direction: column;
+    height: 30vh;
+
     .navbarMenu {
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+
       .menuLoginBlock {
         text-align: center;
 
@@ -68,14 +201,39 @@
         }
       }
 
-      .menuAdminBlock {
-        .adminIcon {
-          font-size: 2rem;
-          margin: 0 4px;
+      .menuActionsButtons {
+        width: 100%;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        margin-top: 24px;
+
+        .menuAdminBlock {
+          margin-left: 2px;
+
+          .adminIcon {
+            font-size: 2rem;
+            margin: 0 4px;
+          }
+
+          .menuTitle {
+            display: none;
+          }
         }
 
-        .menuTitle {
-          display: none;
+        .menuCartBlock {
+          margin-left: 2px;
+
+          .cartIcon {
+            font-size: 2rem;
+            margin: 0 4px;
+          }
+
+          strong .menuTitle {
+            display: none;
+          }
         }
       }
     }

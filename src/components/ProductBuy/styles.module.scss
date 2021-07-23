@@ -61,10 +61,27 @@
   }
 
   .productQuantity {
+    display: flex;
+    align-items: center;
+
     font-size: 0.8rem;
     font-weight: 500;
 
     margin-top: 8px;
+
+    input {
+      width: 38px;
+      height: 18px;
+
+      text-align: center;
+
+      border: 1px solid #abc;
+      border-radius: 4px;
+
+      margin-left: 12px;
+
+      font-size: 0.8rem;
+    }
   }
 
   .buyButton {
@@ -86,9 +103,19 @@
   }
 
   .safetyTransaction {
+    display: flex;
+    align-items: center;
+
     font-size: 0.8rem;
 
     margin-top: 16px;
+
+    .lockIcon {
+      margin-right: 4px;
+      font-size: 0.8rem;
+
+      color: var(--bg-secondary);
+    }
   }
 
   .sendByInfo {
@@ -118,6 +145,9 @@
 }
 
 @media screen and (max-width: 720px) {
+  .box {
+    margin-left: 0;
+  }
 }
 
 @media screen and (max-width: 520px) {

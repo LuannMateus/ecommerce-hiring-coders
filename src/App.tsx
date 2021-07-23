@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import { Routes } from './Routes';
+import { CartContextProvider } from './context/CartContext';
 
 import data from './data/data.json';
 
@@ -9,14 +10,20 @@ import { saveBooksInLocalStorage } from './service/registerBooks';
 
 function App() {
   useEffect(() => {
-    const books = data as Book[];
+    const existsData = !!localStorage.getItem('books') ?? '';
 
-    saveBooksInLocalStorage('books', [...books]);
+    if (!existsData) {
+      const books = data as Book[];
+
+      saveBooksInLocalStorage('books', [...books]);
+    }
   }, []);
 
   return (
     <div className="App">
-      <Routes />
+      <CartContextProvider>
+        <Routes />
+      </CartContextProvider>
     </div>
   );
 }

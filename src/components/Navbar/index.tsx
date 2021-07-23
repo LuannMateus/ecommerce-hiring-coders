@@ -2,11 +2,13 @@ import { useEffect, useState } from 'react';
 
 import { IoMdSettings } from 'react-icons/io';
 import { FaUserCircle } from 'react-icons/fa';
+import { GiShoppingCart } from 'react-icons/gi';
 
 import { useHistory } from 'react-router';
 import { Link } from 'react-router-dom';
 
 import styles from './styles.module.scss';
+import { useCart } from '../../hooks/useCart';
 
 type User = {
   name: string;
@@ -14,6 +16,7 @@ type User = {
 };
 
 const Navbar = () => {
+  const { items } = useCart();
   const [user, setUser] = useState<User>();
 
   const history = useHistory();
@@ -63,14 +66,26 @@ const Navbar = () => {
           </button>
         </div>
 
-        <div className={styles.menuAdminBlock}>
-          <Link to="/admin" className={styles.menuAdminBlock}>
-            <IoMdSettings className={styles.adminIcon} />
-            <strong>
-              <p className={styles.menuTitle}>Administração</p>
-            </strong>
-          </Link>
-        </div>
+        <section className={styles.menuActionsButtons}>
+          <div className={styles.menuAdminBlock}>
+            <Link to="/admin" className={styles.menuAdminBlock}>
+              <IoMdSettings className={styles.adminIcon} />
+              <strong>
+                <p className={styles.menuTitle}>Administração</p>
+              </strong>
+            </Link>
+          </div>
+
+          <div className={styles.menuCartBlock}>
+            <Link to="/cart" className={styles.menuCartBlock}>
+              <GiShoppingCart className={styles.cartIcon} />
+              <span>{items?.length}</span>
+              <strong>
+                <p className={styles.menuTitle}>Carrinho</p>
+              </strong>
+            </Link>
+          </div>
+        </section>
       </menu>
     </nav>
   );
