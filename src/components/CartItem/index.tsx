@@ -1,3 +1,4 @@
+import { useCart } from '../../hooks/useCart';
 import { Book } from '../../model/Book';
 
 import styles from './styles.module.scss';
@@ -7,6 +8,12 @@ type CartItemProps = {
 };
 
 const CartItem = ({ book }: CartItemProps) => {
+  const { removeOneBookToCart } = useCart();
+
+  const handleRemove = () => {
+    removeOneBookToCart(book);
+  };
+
   return (
     <section className={styles.cartBox}>
       <div className={styles.cartImage}>
@@ -21,7 +28,9 @@ const CartItem = ({ book }: CartItemProps) => {
         <p className={styles.infoAuthor}>por {book.authors}</p>
         <p className={styles.infoPublish}>{book.publishingCompany}</p>
         <section className={styles.cartItemButtonActions}>
-          <button className={styles.removeButton}>Remover</button>
+          <button className={styles.removeButton} onClick={handleRemove}>
+            Remover
+          </button>
         </section>
       </div>
     </section>

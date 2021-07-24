@@ -10,9 +10,10 @@ import { ToastContainer, toast } from 'react-toastify';
 import { IoMdSettings } from 'react-icons/io';
 import { FaUsers, FaBook } from 'react-icons/fa';
 
-import styles from './styles.module.scss';
-import 'react-toastify/dist/ReactToastify.css';
 import { Helmet } from 'react-helmet';
+
+import 'react-toastify/dist/ReactToastify.css';
+import styles from './styles.module.scss';
 
 const Admin = () => {
   const handleUserSubmit = (event: FormEvent) => {

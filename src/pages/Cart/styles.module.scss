@@ -1,5 +1,5 @@
 .cartContainer {
-  height: 61vh;
+  height: 100%;
 
   .cartHeader {
     display: flex;
@@ -10,11 +10,142 @@
 
   .cartMain {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 
     gap: 12px;
 
     margin-top: 104px;
     padding: 0 150px;
+
+    .cartItems {
+      width: 100%;
+
+      display: flex;
+      flex-direction: column;
+
+      .cartPurchaseBox {
+        display: flex;
+        flex-direction: column;
+
+        margin-top: 14px;
+
+        p {
+          font-size: 1.1rem;
+          font-weight: 500;
+
+          span {
+            font-weight: 600;
+          }
+        }
+
+        button {
+          border: 1px solid #abc;
+          border-radius: 12px;
+
+          background-color: var(--bg-primary);
+          color: var(--text-primary);
+
+          width: 120px;
+          height: 25px;
+
+          cursor: pointer;
+
+          margin-top: 14px;
+
+          transition: filter 0.5s;
+
+          &:hover {
+            filter: brightness(0.9);
+          }
+        }
+      }
+    }
+  }
+}
+
+.cartContainer {
+  .cartMain {
+    .cartEmptyContainer {
+      height: 100%;
+
+      .cartEmptyBox {
+        height: 100%;
+        width: 100%;
+
+        display: flex;
+
+        border: 1px solid #abc;
+
+        padding: 24px 16px;
+
+        margin-top: 12px;
+
+        .cartIcon {
+          font-size: 4rem;
+        }
+
+        .cartEmptyInfo {
+          display: flex;
+          flex-direction: column;
+
+          margin-left: 14px;
+
+          h1 {
+            font-size: 1.2rem;
+          }
+
+          p {
+            font-size: 0.8rem;
+
+            margin-top: 8px;
+          }
+
+          button {
+            border: 1px solid #abc;
+            border-radius: 12px;
+
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+
+            width: 160px;
+            height: 30px;
+
+            cursor: pointer;
+
+            margin-top: 8px;
+
+            transition: filter 0.5s;
+
+            &:hover {
+              filter: brightness(0.9);
+            }
+          }
+        }
+      }
+
+      .emptyBox {
+        border: 1px solid var(--bg-primary);
+
+        padding: 24px 0;
+
+        margin-top: 12px;
+      }
+
+      p {
+        font-size: 0.8rem;
+
+        margin-top: 24px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .cartContainer {
+    padding: 0 12px;
+
+    .cartMain {
+      padding: 0;
+    }
   }
 }

@@ -11,11 +11,12 @@ import { ProductIconInfo } from '../../components/ProductIconInfo';
 import { ProductBuy } from '../../components/ProductBuy';
 import { PersonalCarousel } from '../../components/Carousel';
 
-import styles from './styles.module.scss';
 import { useEffect } from 'react';
 import { useState } from 'react';
 import { Book } from '../../model/Book';
 import { Helmet } from 'react-helmet';
+
+import styles from './styles.module.scss';
 
 const ProductPage = () => {
   const programmingBooks = books as Book[];

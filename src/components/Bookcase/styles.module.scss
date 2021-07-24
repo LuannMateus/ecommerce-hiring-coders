@@ -1,0 +1,22 @@
+.bookcaseBox {
+  border: 1px solid #abc;
+
+  padding: 12px 12px;
+  margin: 0 0 0 24px;
+
+  border-radius: 16px;
+
+  h1 {
+    font-size: 0.8rem;
+  }
+}
+
+.bookcaseBoxHide {
+  display: none;
+}
+
+@media screen and (max-width: 720px) {
+  .bookcaseBox {
+    display: none;
+  }
+}

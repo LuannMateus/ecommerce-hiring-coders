@@ -1,4 +1,6 @@
 import { FunctionComponent } from 'react';
+import { useHistory } from 'react-router-dom';
+
 import { Link } from 'react-router-dom';
 import { Book } from '../../model/Book';
 
@@ -9,6 +11,8 @@ type BookProp = {
 };
 
 const MiniCard: FunctionComponent<BookProp> = ({ book }) => {
+  const history = useHistory();
+
   const { title, thumbnailUrl, price } = book;
 
   const formatPrice = (+price * 1).toFixed(2).replace('.', ',');
@@ -16,9 +20,12 @@ const MiniCard: FunctionComponent<BookProp> = ({ book }) => {
 
   return (
     <div className={styles.card} key={`book_${title}_${Math.random()}`}>
-      <Link to={`/product/${title}`}>
-        <img src={thumbnailUrl} alt={title} />
-      </Link>
+      <img
+        src={thumbnailUrl}
+        alt={title}
+        onDoubleClick={() => history.push(`/product/${title}`)}
+      />
+      {/* <Link to={`/product/${title}`}></Link> */}
       <div className={styles.cardInformation}>
         <p className={styles.priceWithDiscount}>R$ {formatDiscount}</p>
         <p className={styles.price}>De {formatPrice} (20% de desconto)</p>

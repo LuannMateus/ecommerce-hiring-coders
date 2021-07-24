@@ -7,6 +7,7 @@ import data from './data/data.json';
 import { Book } from './model/Book';
 
 import { saveBooksInLocalStorage } from './service/registerBooks';
+import { BookcaseContextProvider } from './context/BookcaseContext';
 
 function App() {
   useEffect(() => {
@@ -19,11 +20,21 @@ function App() {
     }
   }, []);
 
+  useEffect(() => {
+    const existsData = !!localStorage.getItem('user') ?? '';
+
+    if (!existsData) {
+      localStorage.setItem('user', JSON.stringify({ name: '', email: '' }));
+    }
+  }, []);
+
   return (
     <div className="App">
-      <CartContextProvider>
-        <Routes />
-      </CartContextProvider>
+      <BookcaseContextProvider>
+        <CartContextProvider>
+          <Routes />
+        </CartContextProvider>
+      </BookcaseContextProvider>
     </div>
   );
 }
