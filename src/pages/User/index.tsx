@@ -11,6 +11,7 @@ import { TextField } from '@material-ui/core';
 
 import styles from './styles.module.scss';
 import { LoginUser } from '../../model/LoginUser';
+import { EmptyProductBox } from '../../components/EmptyProductBox';
 
 const UserPage = () => {
   const [user, setUser] = useState<LoginUser>();
@@ -107,6 +108,14 @@ const UserPage = () => {
         <h1>Extratos</h1>
 
         {renderExtract()}
+
+        {extracts === undefined && (
+          <EmptyProductBox
+            title="Sem extratos para mostrar"
+            subtitle="Compras feitas na Best Book"
+            icon="AiTwotoneBank"
+          />
+        )}
       </main>
       <Footer />
     </>
