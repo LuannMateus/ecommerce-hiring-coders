@@ -25,7 +25,6 @@ const MiniCard: FunctionComponent<BookProp> = ({ book }) => {
         alt={title}
         onDoubleClick={() => history.push(`/product/${title}`)}
       />
-      {/* <Link to={`/product/${title}`}></Link> */}
       <div className={styles.cardInformation}>
         <p className={styles.priceWithDiscount}>R$ {formatDiscount}</p>
         <p className={styles.price}>De {formatPrice} (20% de desconto)</p>

@@ -1,5 +1,6 @@
 [
   {
+    "id": "959669b6-00ab-45fe-883b-dc9bd59bee4f",
     "title": "Dom Casmurro",
     "thumbnailUrl": "https://images-na.ssl-images-amazon.com/images/I/41GeyYROqTL._SX346_BO1,204,203,200_.jpg",
     "price": 48.0,
@@ -11,6 +12,7 @@
     "language": "Português"
   },
   {
+    "id": "895c4372-2928-4299-a8a6-14709fbfe45a",
     "title": "Memórias póstumas de Brás Cubas",
     "thumbnailUrl": "https://images-na.ssl-images-amazon.com/images/I/51rEMmmweAL._SX346_BO1,204,203,200_.jpg",
     "price": 9.95,
@@ -22,6 +24,7 @@
     "language": "Português"
   },
   {
+    "id": "34ab3027-67bc-4e11-8d68-6c3c9fdff20e",
     "title": "O cortiço",
     "thumbnailUrl": "https://images-na.ssl-images-amazon.com/images/I/41IJk85OQ-L._SX344_BO1,204,203,200_.jpg",
     "price": 31.32,
@@ -33,6 +36,7 @@
     "language": "Português"
   },
   {
+    "id": "8a78d590-6c80-4b10-b938-78f9868e4ed1",
     "title": "Iracema",
     "thumbnailUrl": "https://images-na.ssl-images-amazon.com/images/I/51qMQyfJrEL._SX359_BO1,204,203,200_.jpg",
     "price": 22.89,
@@ -44,6 +48,7 @@
     "language": "Português"
   },
   {
+    "id": "683c45bc-07ab-4b27-a6c6-9cbcdde8b226",
     "title": "Vidas secas",
     "thumbnailUrl": "https://images-na.ssl-images-amazon.com/images/I/41RHln7kZoL._SX321_BO1,204,203,200_.jpg",
     "price": 28.59,

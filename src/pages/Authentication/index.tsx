@@ -18,6 +18,7 @@ const Authentication = () => {
     const data = {
       name: formData.get('name') as String,
       email: formData.get('email') as String,
+      imageUrl: '',
     };
 
     const isValidate = data.name.length > 2 && data.email.includes('@');

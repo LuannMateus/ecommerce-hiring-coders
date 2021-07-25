@@ -39,7 +39,7 @@
         }
 
         button {
-          border: 1px solid #abc;
+          border: 1px solid var(--bg-primary);
           border-radius: 12px;
 
           background-color: var(--bg-primary);
@@ -74,7 +74,7 @@
 
         display: flex;
 
-        border: 1px solid #abc;
+        border: 1px solid var(--bg-primary);
 
         padding: 24px 16px;
 
@@ -142,7 +142,7 @@
 
 @media screen and (max-width: 720px) {
   .cartContainer {
-    padding: 0 12px;
+    padding: 0 6px;
 
     .cartMain {
       padding: 0;

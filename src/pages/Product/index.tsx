@@ -60,9 +60,7 @@ const ProductPage = () => {
           />
           <section className={styles.productInfo}>
             <h1 className={styles.infoTitle}>{book?.title}</h1>
-            <span className={styles.infoSubtitle}>
-              Edição Português por Gabriel Dearo (Autor), Manu Digilio (Autor)
-            </span>
+            <span className={styles.infoSubtitle}>{book?.authors} (Autor)</span>
 
             <p className={styles.infoDescription}>{book?.longDescription}</p>
 
@@ -97,6 +95,7 @@ const ProductPage = () => {
             <ProductBuy
               book={
                 book ?? {
+                  id: '',
                   title: 'Dom Casmurro',
                   thumbnailUrl:
                     'https://images-na.ssl-images-amazon.com/images/I/41GeyYROqTL._SX346_BO1,204,203,200_.jpg',

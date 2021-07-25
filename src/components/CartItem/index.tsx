@@ -11,7 +11,7 @@ const CartItem = ({ book }: CartItemProps) => {
   const { removeOneBookToCart } = useCart();
 
   const handleRemove = () => {
-    removeOneBookToCart(book);
+    removeOneBookToCart(book.id);
   };
 
   return (

@@ -9,6 +9,7 @@ import { Link } from 'react-router-dom';
 
 import styles from './styles.module.scss';
 import { useCart } from '../../hooks/useCart';
+import { LoginUser } from '../../model/LoginUser';
 
 type User = {
   name: string;
@@ -17,7 +18,7 @@ type User = {
 
 const Navbar = () => {
   const { items } = useCart();
-  const [user, setUser] = useState<User>();
+  const [user, setUser] = useState<LoginUser>();
 
   const history = useHistory();
 
@@ -33,6 +34,7 @@ const Navbar = () => {
       setUser({
         name: '',
         email: '',
+        imageUrl: '',
       });
     }
   }, []);
@@ -52,7 +54,17 @@ const Navbar = () => {
         <h1>Best Book</h1>
       </Link>
       <menu className={styles.navbarMenu}>
-        <FaUserCircle className={styles.navbarLoginIcon} />
+        <Link to="/user" className={styles.menuCartBlock}>
+          {user?.imageUrl !== '' ? (
+            <img
+              src={user?.imageUrl}
+              alt=""
+              className={styles.navbarLoginImage}
+            />
+          ) : (
+            <FaUserCircle className={styles.navbarLoginIcon} />
+          )}
+        </Link>
         <div className={styles.menuLoginBlock}>
           <strong>
             <p className={styles.menuTitle}>

@@ -5,7 +5,7 @@ import { Book } from '../model/Book';
 type CartContextType = {
   items: Book[] | undefined;
   addBookToCart: (book: Book) => void;
-  removeOneBookToCart: (book: Book) => void;
+  removeOneBookToCart: (id: string) => void;
   removeAllBooks: () => void;
 };
 
@@ -22,10 +22,17 @@ export function CartContextProvider(props: CartContextProviderProps) {
     setItems([...items, book]);
   };
 
-  const removeOneBookToCart = (book: Book) => {
-    const newItemList = items.filter(
-      (itemBook) => itemBook.title !== book.title
-    );
+  const removeOneBookToCart = (id: string) => {
+    let count = 0;
+
+    const newItemList = items.filter((itemBook) => {
+      if (itemBook.id === id && count === 0) {
+        count++;
+        return false;
+      }
+
+      return true;
+    });
 
     setItems(newItemList);
   };

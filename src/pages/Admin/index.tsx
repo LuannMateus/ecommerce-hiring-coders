@@ -27,6 +27,7 @@ const Admin = () => {
       name: formData.get('name'),
       lastName: formData.get('lastName'),
       phone: formData.get('phone'),
+      address: formData.get('address'),
       email: formData.get('email'),
     } as User;
 
@@ -48,6 +49,8 @@ const Admin = () => {
     const data = {
       name: formData.get('name'),
       category: formData.get('category'),
+      author: formData.get('author'),
+      thumbnailUrl: formData.get('thumbnailUrl'),
       price: formData.get('price'),
       barCode: formData.get('barCode'),
     } as Product;
@@ -93,13 +96,19 @@ const Admin = () => {
                 name="lastName"
               />
               <TextField
-                placeholder="Telefone"
+                placeholder="Endereço | Av Sem Fim - 21"
+                color="primary"
+                variant="outlined"
+                name="address"
+              />
+              <TextField
+                placeholder="Telefone | (85) 9..."
                 color="primary"
                 variant="outlined"
                 name="phone"
               />
               <TextField
-                placeholder="E-mail"
+                placeholder="E-mail | john@doe.com"
                 color="primary"
                 variant="outlined"
                 name="email"
@@ -141,6 +150,18 @@ const Admin = () => {
                 color="primary"
                 variant="outlined"
                 name="category"
+              />
+              <TextField
+                placeholder="Author"
+                color="primary"
+                variant="outlined"
+                name="author"
+              />
+              <TextField
+                placeholder="Imagem do Livro"
+                color="primary"
+                variant="outlined"
+                name="thumbnailUrl"
               />
               <TextField
                 placeholder="Preço"

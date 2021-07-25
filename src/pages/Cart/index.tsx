@@ -30,17 +30,22 @@ const Cart = () => {
       toast.error('Usuário precisar estar logado para comprar!');
       return;
     } else {
-      const userName = parseUser.name;
       const purchase =
         items?.map((item) => {
           return {
-            product: item.title,
+            product: item,
             quantity: 1,
           };
         }) ?? [];
 
+      const userName = parseUser.name;
+
+      const date = new Date();
+
+      const dateOfPurchase = `${date.getDate()}/${date.getMonth()}`;
+
       try {
-        saveCartPurchaseInLocalStorage({ userName, purchase });
+        saveCartPurchaseInLocalStorage({ userName, dateOfPurchase, purchase });
         toast.success('Compra realizada com sucesso!');
         removeAllBooks();
       } catch (error) {

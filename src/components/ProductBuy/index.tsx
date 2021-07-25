@@ -39,12 +39,16 @@ const ProductBuy: FunctionComponent<ProductBuyProps> = ({ book }) => {
     const userName = parseUser.name;
 
     const purchase = {
-      product: book?.title ?? '',
+      product: book,
       quantity: quantity,
     };
 
+    const date = new Date();
+
+    const dateOfPurchase = `${date.getDate()}/${date.getMonth()}`;
+
     try {
-      savePurchaseInLocalStorage({ userName, purchase });
+      savePurchaseInLocalStorage({ userName, dateOfPurchase, purchase });
       toast.success('Livro comprado com sucesso!');
     } catch (error) {
       toast.error(error);

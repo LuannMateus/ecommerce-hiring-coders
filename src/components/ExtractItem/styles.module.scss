@@ -1,0 +1,200 @@
+.extractItemBox {
+  height: 100%;
+  width: 80%;
+
+  display: flex;
+  align-items: center;
+
+  margin-top: 4px;
+
+  border: 1px solid var(--bg-primary);
+
+  gap: 24px;
+
+  .itemsContainer {
+    display: flex;
+    flex-direction: column;
+
+    .cardContainer {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+
+      .headerItem {
+        display: flex;
+
+        width: 340px;
+
+        gap: 24px;
+
+        padding: 24px 0;
+
+        .extractItemIcon {
+          align-self: center;
+
+          font-size: 1.4rem;
+
+          color: green;
+
+          margin-left: 16px;
+        }
+
+        .imageAndTitle {
+          .extractItemImage {
+            width: 120px;
+            height: 120px;
+            margin: 0;
+          }
+
+          h1 {
+            align-self: center;
+
+            margin-top: 8px;
+          }
+        }
+      }
+
+      .extractItemInfo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        padding: 22px 12px;
+
+        border-left: 1px solid #abc;
+
+        .extractItemPrice {
+          font-size: 1.2rem;
+          font-weight: 500;
+        }
+
+        .extractItemInfoData {
+          align-self: flex-start;
+
+          font-size: 0.8rem;
+          font-weight: 400;
+
+          margin-top: 4px;
+        }
+      }
+    }
+  }
+
+  .extractItemActionButton {
+    button {
+      background-color: #fff;
+      border: none;
+
+      margin: 0 44px;
+
+      cursor: pointer;
+
+      transition: transform 0.5s;
+
+      .extractItemRemoveIcon {
+        font-size: 1.6rem;
+        color: rgb(219, 21, 21);
+      }
+
+      &:hover {
+        transform: scale(1.15);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .extractItemBox {
+    width: 100%;
+
+    gap: 0px;
+
+    .itemsContainer {
+      width: 100%;
+      padding: 0;
+      margin: 0;
+
+      .cardContainer {
+        .headerItem {
+          width: 420px;
+
+          padding: 20px 20px;
+
+          .imageAndTitle {
+            display: flex;
+            flex-direction: column;
+            h1 {
+              margin-left: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .extractItemBox {
+    width: 100%;
+
+    gap: 0px;
+
+    .itemsContainer {
+      width: 100%;
+      padding: 0;
+      margin: 0;
+
+      text-align: center;
+
+      .cardContainer {
+        width: 100%;
+
+        flex-direction: column;
+
+        text-align: center;
+
+        .headerItem {
+          width: 100%;
+
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+
+          padding: 0;
+          margin: 0;
+
+          .extractItemIcon {
+            margin-top: 24px;
+          }
+
+          .imageAndTitle {
+            width: 100%;
+
+            flex-direction: column;
+            text-align: center;
+
+            img {
+              align-self: center;
+            }
+
+            h1 {
+              margin-top: 12px;
+            }
+          }
+        }
+
+        .extractItemInfo {
+          border-left: none;
+
+          .extractItemInfoData {
+            width: 100%;
+            text-align: center;
+
+            margin-top: 8px;
+          }
+        }
+      }
+    }
+  }
+}

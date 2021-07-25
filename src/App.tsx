@@ -24,7 +24,10 @@ function App() {
     const existsData = !!localStorage.getItem('user') ?? '';
 
     if (!existsData) {
-      localStorage.setItem('user', JSON.stringify({ name: '', email: '' }));
+      localStorage.setItem(
+        'user',
+        JSON.stringify({ name: '', email: '', imageUrl: '' })
+      );
     }
   }, []);
 

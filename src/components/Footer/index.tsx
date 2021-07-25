@@ -1,6 +1,4 @@
-import FacebookLogo from '../../assets/img/facebook.svg';
-import InstagramLogo from '../../assets/img/instagram.svg';
-import GithubLogo from '../../assets/img/github.svg';
+import Logo from '../../assets/img/logo.svg';
 
 import styles from './styles.module.scss';
 
@@ -11,31 +9,33 @@ const Footer = () => {
         <button className={styles.backButton}>Voltar ao inicio</button>
       </a>
 
-      <section className={styles.footerSocialMedias}>
-        <a href="/">
-          <img
-            src={FacebookLogo}
-            alt="Facebbok Logo"
-            aria-label="Facebbok Logo"
-          />
-        </a>
+      <section className={styles.footerInfo}>
+        <div className={styles.infoMeetUsBlock}>
+          <h1>Conheça-nos</h1>
+          <p>
+            Informações <br /> corporativas
+          </p>
+          <p>Comunidade</p>
+        </div>
 
-        <a href="/">
-          <img
-            src={InstagramLogo}
-            alt="Facebbok Logo"
-            aria-label="Facebbok Logo"
-          />
-        </a>
+        <div className={styles.infoEarMoneyBlock}>
+          <h1>Ganhe dinheiro conosco</h1>
+          <p>Publique seus livros</p>
+          <p>Seja um associado</p>
+        </div>
 
-        <a href="/">
-          <img
-            src={GithubLogo}
-            alt="Facebbok Logo"
-            aria-label="Facebbok Logo"
-          />
-        </a>
+        <div className={styles.infoEarMoneyBlock}>
+          <h1>Deixe-nos ajudá-lo</h1>
+          <p>Sua conta</p>
+        </div>
+
+        <div className={styles.infoEarMoneyBlock}>
+          <h1>Pagamento</h1>
+          <p>Cartões de crédito e Boleto</p>
+        </div>
       </section>
+
+      <img src={Logo} alt="Best Book Logo" />
     </footer>
   );
 };
