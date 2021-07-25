@@ -1,11 +1,18 @@
+&nbsp;
+
 <h1 align="center" > Hiring Coders Ecommerce</h1>
 <p align="center" > <i> Esse projeto foi feito para cumprir o desafio # 2 do treinamento Hiring Coders<i></p>
+
+&nbsp;
+
 <h2 align="center">🚀 O que foi feito?</h2>
 <div align="center" >
 <p> O desafio propõe a criação  de um sistema de ecommerce para invetário de clientes e produtos. Além disso, foi criado um sistema que simula um ecommerce, utilizando o armazamento no local storage. Em geral, foi criado um ecommerce com a temática de livraria.</p>
 </div>
 
-<section align="center">
+&nbsp;
+
+<div align="center">
 <h2>🚀 Requisitos funcionais</h2>
 <p >
 - Eu como usuário, quando logado no sistema, posso realizar compras.
@@ -13,23 +20,29 @@
 <p >
 - Eu como administrador, posso cadastrar produtos e clientes.
 </p>
-</section>
+</div>
 
-<section align="center">
+&nbsp;
+
+<div align="center">
 <h2>🚀 Requisitos não funcionais</h2>
 <p >
 - Para todo armazenamento, deve ser utilizado o local storage.
 </p>
-</section>
+</div>
 
-<section align="center">
+&nbsp;
+
+<div align="center">
 <h2>🚀 Regras de negócio</h2>
 <p >
 - Todo cliente deve estar logado para realizar compras.
 </p>
-</section>
+</div>
 
-<section align="center">
+&nbsp;
+
+<div align="center">
 <h2>🚀 Rotas da aplicação</h2>
 <p >
 / -> Página inicial, onde fica os produtos.
@@ -49,9 +62,11 @@
 <p >
 /admin -> Página do administrador, onde poderá ser feito registro de clientes e produtos.
 </p>
-</section>
+</div>
 
-<section align="center">
+&nbsp;
+
+<div align="center">
 <h2>🚀 Inicilizar a aplicação</h2>
 <p align="center">
 - npm start ou yarn start: Inicila a aplicação localmente.
@@ -59,13 +74,13 @@
 <p align="center">
 - npm build ou yarn build: Gera o build da aplicação.
 </p>
-</section>
+</div>
 
 &nbsp;
 
-<footer align="center">
+<div align="center">
 Aplicação hospedada pela Vercel: <a href="https://ecommerce-hiring-coders.vercel.app/" target="_new" >Best Book</a>
-</footer>
+</div>
 
 &nbsp;
 
